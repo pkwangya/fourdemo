@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="demo.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row one">
+        <div class="col-md-1">
+          <img src="pbrand.png" alt="logo">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-12">
+              <marquee behavior="alternate" direction="right" onmouseover="stop()" onmouseout="start()" scrollamount="3" class="marq"><a href="#">This is my 4th web demo! I hope you will like it. Thank You !</a></marquee>
+            </div>
+            <div class="col-12">
+              <i class="fa fa-home" id="icon"></i>
+              <ul class="nav" id="navid">
+                <li class="list"><a href="#" class="nav-link active">Home</a></li>
+                <li class="list"><a href="#" class="nav-link">Blog</a></li>
+                <li class="list"><a href="#" class="nav-link">Service</a></li>
+                <li class="more"><a href="#" class="nav-link">More <i class="fa fa-caret-down"></i></a>
+                  <nav class="dropdown">
+                    <a href="#" class="" id="nav-link">Link one</a>
+                    <a href="#" class="" id="nav-link">Link two</a>
+                    <a href="#" class="" id="nav-link">Link three</a>
+                    <a href="#" class="" id="nav-link">Link four</a>
+                  </nav> 
+                </li>
+                <li class="list"><a href="#" class="nav-link">About</a></li>
+                <li class="list"><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <a href="#" class="nav-link mail">pkwangya@gmail.com</a>
+          +91-<i>9719894018</i>
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-success">Apply</button><br>
+          <button class="btn btn-primary mt-2">LogIn</button>
+        </div>
+      </div><!--row 1-->
+      <script>
+       /* let work=document.getElementById('navid')
+        function hfunction(){
+          if(work.className==='nav'){
+            work.className+='show'
+          }else{
+            work.className='nav'
+          }
+        }*/
+      </script>
+      <script>
+        $(document).ready(function(){
+          $('#icon').click(function(){
+            $('.nav').toggleClass("show");
+          })
+        })
+      </script>
+    </div><!--container-->
+    <div class="container">
+      <div class="row cover py-5">
+          <div class="col-md-5 text-center cover-div">
+            <img class="cover-logo px-1" src="pbrand.png" alt="brand logo">
+          </div>
+          <div class="col-md-7">
+            <h2 class="h2-heading">
+              Hi! Your Welcome here
+            </h2>
+            <h1 class="h1-heading">
+              Let's Make <span class="dw">Digital World</span>
+            </h1>
+            <h4 class="h4-heading">I hope you will understand<br> what I want</h4>
+          </div>
+        </div><!--row-->
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="main-topic">What I do ?</h1>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam perferendis reprehenderit repudiandae dicta. At ipsam architecto illo doloribus, cupiditate veritatis alias harum velit eaque voluptate ut necessitatibus id recusandae! Non, eius. Nihil accusantium distinctio, quam dolorum itaque ea illum.</div>
+            <div class="col-md-4 col-sm-6 bg-light article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam perferendis reprehenderit repudiandae dicta. At ipsam architecto illo doloribus, cupiditate veritatis alias harum velit eaque voluptate ut necessitatibus id recusandae! Non, eius. Nihil accusantium distinctio, quam dolorum itaque ea illum.</div>
+            <div class="col-md-4 col-sm-6 article">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam perferendis reprehenderit repudiandae dicta. At ipsam architecto illo doloribus, cupiditate veritatis alias harum velit eaque voluptate ut necessitatibus id recusandae! Non, eius. Nihil accusantium distinctio, quam dolorum itaque ea illum.</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-12 formm py-2">
+              <h5 class="text-center">Give us your feedback</h5>
+              <form action="#" class="form">
+                <input class="col-12 aside-form" type="text" placeholder="Your Name">
+                <input class="col-12 aside-form" type="number" placeholder="Your mobile no.">
+                <input class="col-12 aside-form" type="email" placeholder="Your Email">
+                <textarea name="text" class="col-12 aside-form" id="text" cols="20" rows="4" placeholder="give us your suggestion"></textarea>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3 points">
+        <div class="col-md-4 one-point">
+          <section>   
+            <img src="pbrand.png" alt="">
+            <p>I have skill of javascript and jquery</p>
+          </section>
+        </div>
+        <div class="col-md-4 two-point">
+          <section>   
+            <img src="pbrand.png" alt="">
+            <p>I have skill of javascript and jquery</p>
+          </section>
+        </div>
+        <div class="col-md-4 three-point">
+          <section>   
+            <img src="pbrand.png" alt="">
+            <p>I have skill of javascript and jquery</p>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 footerbar">
+          <h5 class="footer-heading">our Portfolio</h5>
+          <ul>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 footerbar">
+          <h5 class="footer-heading">our Service</h5>
+          <ul>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 footerbar">
+          <h5 class="footer-heading">our partners</h5>
+          <ul>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+            <li class="link-item">one list</li>
+          </ul>
+        </div>
+        <div class="col-12 footer">&copy; Copyright company since 2020</div>
+      </div>
+    </div><!--container-->
+  </body>
+</html>
